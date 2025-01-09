@@ -5,14 +5,16 @@ import './index.css'
 import App from './App.tsx'
 import { dojoConfig } from '../dojoConfig.ts'
 import { DojoContextProvider } from './DojoContext.tsx'
+import StarknetProvider from './starknet-provider.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <DojoContextProvider
       burnerManager={await setupBurnerManager(dojoConfig)}
     >
-      <App />
-    </DojoContextProvider>
-    
+      <StarknetProvider>
+        <App />
+      </StarknetProvider>
+    </DojoContextProvider>   
   </StrictMode>,
 )
