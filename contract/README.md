@@ -1,5 +1,7 @@
 ![Dojo Starter](./assets/cover.png)
 
+Run `katana --dev --dev.no-fee --http.cors_origins '*'`
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/mark-dark.svg">
   <img alt="Dojo logo" align="right" width="120" src=".github/mark-light.svg">
