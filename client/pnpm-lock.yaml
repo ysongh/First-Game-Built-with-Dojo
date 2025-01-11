@@ -11,8 +11,8 @@ dependencies:
     specifier: ^1.0.8
     version: 1.0.8(@starknet-react/core@3.6.3)(starknet@6.11.0)
   '@dojoengine/sdk':
-    specifier: ^1.0.8
-    version: 1.0.8(@types/react@18.3.18)(react@18.3.1)(starknet@6.11.0)
+    specifier: ^1.0.9
+    version: 1.0.9(@types/react@18.3.18)(react@18.3.1)(starknet@6.11.0)
   '@dojoengine/torii-client':
     specifier: ^1.0.8
     version: 1.0.8
@@ -338,16 +338,16 @@ packages:
       - zod
     dev: false
 
-  /@dojoengine/sdk@1.0.8(@types/react@18.3.18)(react@18.3.1)(starknet@6.11.0):
-    resolution: {integrity: sha512-dBEQxiwKhPQCXNQ4OvRy02jgEPxYLYC1sDY1DqKhQqOzUVo9/ZjGpPSRkbRev8l8Pkk9dDHh7HWd+v/EbN/kiA==}
+  /@dojoengine/sdk@1.0.9(@types/react@18.3.18)(react@18.3.1)(starknet@6.11.0):
+    resolution: {integrity: sha512-UH+hUyVTVlyROcBMb1+6qih9I5Hs7FWHrw4+ivtx2Oltr30pD43/Lx3DI5UCMrsoq5Atj0juRP+WkxLCs82uHw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      starknet: 'catalog:'
+      starknet: ^6.11.0
     dependencies:
-      '@dojoengine/torii-client': 1.0.8
+      '@dojoengine/torii-client': 1.0.9
       immer: 10.1.1
       starknet: 6.11.0
-      zustand: 4.5.5(@types/react@18.3.18)(immer@10.1.1)(react@18.3.1)
+      zustand: 4.5.6(@types/react@18.3.18)(immer@10.1.1)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - react
@@ -359,8 +359,18 @@ packages:
       '@dojoengine/torii-wasm': 1.0.8
     dev: false
 
+  /@dojoengine/torii-client@1.0.9:
+    resolution: {integrity: sha512-WwjKtzvZizb+/aS0LsL9Owhd502oCMXZ2TjdlW2TSRZ5BF66ow9zz6GEmf4Mo1/lMIVIBETd9BfakayYzl2HWQ==}
+    dependencies:
+      '@dojoengine/torii-wasm': 1.0.9
+    dev: false
+
   /@dojoengine/torii-wasm@1.0.8:
     resolution: {integrity: sha512-f2tonHBTPMu+0hByuWQAvd38pm2kHxyJpdD0KEynYwYOz6n0FPNKjcmTGidHVu5JslZecL0g2yLRxxzbaMafzA==}
+    dev: false
+
+  /@dojoengine/torii-wasm@1.0.9:
+    resolution: {integrity: sha512-qWYMRy/Hk4Bl2mWbFqN5siirtkW5lJ0eks/1/FjW8GhlfkVZs0RCjYYewl/26EjsUYL1TzHnwKB2CtfRH79bHA==}
     dev: false
 
   /@dojoengine/utils@1.0.8(starknet@6.11.0)(typescript@5.6.2):
@@ -2593,10 +2603,10 @@ packages:
     resolution: {integrity: sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==}
     dev: false
 
-  /use-sync-external-store@1.2.2(react@18.3.1):
-    resolution: {integrity: sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==}
+  /use-sync-external-store@1.4.0(react@18.3.1):
+    resolution: {integrity: sha512-9WXSPC5fMv61vaupRkCKCxsPxBocVnwakBEkMIHHpkTTg6icbJtg6jzgtLDm4bl3cSHAca52rYWih0k4K3PfHw==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
       react: 18.3.1
     dev: false
@@ -2832,8 +2842,8 @@ packages:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
     dev: false
 
-  /zustand@4.5.5(@types/react@18.3.18)(immer@10.1.1)(react@18.3.1):
-    resolution: {integrity: sha512-+0PALYNJNgK6hldkgDq2vLrw5f6g/jCInz52n9RTpropGgeAf/ioFUCdtsjCqu4gNhW9D01rUQBROoRjdzyn2Q==}
+  /zustand@4.5.6(@types/react@18.3.18)(immer@10.1.1)(react@18.3.1):
+    resolution: {integrity: sha512-ibr/n1hBzLLj5Y+yUcU7dYw8p6WnIVzdJbnX+1YpaScvZVF2ziugqHs+LAmHw4lWO9c/zRj+K1ncgWDQuthEdQ==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
       '@types/react': '>=16.8'
@@ -2850,5 +2860,5 @@ packages:
       '@types/react': 18.3.18
       immer: 10.1.1
       react: 18.3.1
-      use-sync-external-store: 1.2.2(react@18.3.1)
+      use-sync-external-store: 1.4.0(react@18.3.1)
     dev: false
