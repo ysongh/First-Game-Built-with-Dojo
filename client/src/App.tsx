@@ -9,7 +9,6 @@ import { getEntityIdFromKeys } from "@dojoengine/utils";
 import { AccountInterface, addAddressPadding } from "starknet";
 
 import {
-    Direction,
     ModelsMapping,
     SchemaType,
 } from "./dojo/typescript/models.gen.ts";
@@ -171,7 +170,7 @@ function App({ sdk }: { sdk: SDK<SchemaType> }) {
                         </div>
                     </div>
 
-                    <div className="bg-gray-700 p-4 rounded-lg shadow-inner">
+                    {/* <div className="bg-gray-700 p-4 rounded-lg shadow-inner">
                         <div className="grid grid-cols-3 gap-2 w-full h-48">
                             {[
                                 {
@@ -209,7 +208,7 @@ function App({ sdk }: { sdk: SDK<SchemaType> }) {
                                 </button>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="mt-8 overflow-x-auto">
