@@ -7,7 +7,7 @@ import {
 import { Account } from "starknet";
 import { dojoConfig } from "../dojoConfig";
 import { DojoProvider } from "@dojoengine/core";
-import { setupWorld } from "./dojo/typescript/contracts.gen";
+import { setupWorld } from "./typescript/contracts.gen";
 
 /**
  * Interface defining the shape of the Dojo context.
